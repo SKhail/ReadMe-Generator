@@ -3,11 +3,11 @@
 ## Table of Content
 
 - [description](#description)
-- [usage] (#usage)
+- [usage](#usage)
 - [installation](#installation)
 - [license](#license)
-- [contribution] (#contribution)
-- [tests] (#test)
+- [contribution](#contribution)
+- [tests](#test)
 
 ## Description
 

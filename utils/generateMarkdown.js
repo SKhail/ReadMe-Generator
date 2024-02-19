@@ -1,3 +1,6 @@
+// CommonJS --> require('<library_name>');   (ES5 Syntax)
+// Module   --> import( '<library_name>');    (ES6 Syntax)
+
 // required packages
 const fs = require('fs');
 const inquirer = require('inquirer');
@@ -34,8 +37,9 @@ function generateMarkdown(data) {
 - [usage] (#usage)
 - [installation](#installation)
 - [license](#license)
-- [contribution] (#contribution)
-- [tests] (#test)
+- [contribution](#contribution)
+- [tests](#test)
+- [questions](#questions)
 
 ## Description
 <a name="description"></a>${data.description}
@@ -56,11 +60,10 @@ function generateMarkdown(data) {
 ## Tests
 <a name="tests"></a>${data.tests}
 
-## Github
+## questions
 
 ### Github Profile is: https://github.com/${data.askGithub}
 
-## Email;
 ### your email address: ${data.askEmail}
 
 `;
@@ -77,20 +80,3 @@ function generateMarkdown(data) {
 
 module.exports = generateMarkdown;
 
-
-
-
-// not needed 
-
-// if (license === 'MIT') {
-//   itembadge = `[![ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
-// } else if(license === 'Apache 2.0') {
-//   itembadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
-// } else if (license === 'GPL v3') {
-//   `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
-// } else if (license === 'BSD 3'){
-//   `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
-// } else {
-//   return badge;
-// }
-// }
