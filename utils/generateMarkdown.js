@@ -27,41 +27,41 @@ function generateLicenseBadge(license) {
 function generateMarkdown(data) {
   // return 
   return `
-    # ${data.title}
-      
-    ## Table of Content
-    - [description](#description)
-    - [usage] (#usage)
-    - [installation](#installation)
-    - [license](#license)
-    - [contribution] (#contribution)
-    - [tests] (#test)
+# ${data.title}
+  
+## Table of Content
+- [description](#description)
+- [usage] (#usage)
+- [installation](#installation)
+- [license](#license)
+- [contribution] (#contribution)
+- [tests] (#test)
 
-    ## Description
-    <a name="description"></a>${data.description}
+## Description
+<a name="description"></a>${data.description}
 
-    ## Usage
-    <a name="usage"></a> ${data.usage}
+## Usage
+<a name="usage"></a> ${data.usage}
 
 
-    ## Installation
-    <a name="installation"></a>${data.installation}
+## Installation
+<a name="installation"></a>${data.installation}
 
-    ## License
-    <a name="license"></a>${generateLicenseBadge(data.license)}
+## License
+<a name="license"></a>${generateLicenseBadge(data.license)}
 
-    ## Contribution
-    <a name="contribution"></a>${data.contribution}
+## Contribution
+<a name="contribution"></a>${data.contribution}
 
-    ## Tests
-    <a name="tests"></a>${data.tests}
+## Tests
+<a name="tests"></a>${data.tests}
 
-    ## Github
+## Github
 
-    ### Github Profile is: https://github.com/${data.askGithub}
+### Github Profile is: https://github.com/${data.askGithub}
 
-    ## Email;
-    ### your email address: ${data.askEmail}
+## Email;
+### your email address: ${data.askEmail}
 
 `;
   // //use boxen to change the readme file look
