@@ -60,13 +60,36 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+// function writeToFile(fileName, data) {
+
+// }
+
+const writeToFile = fileInfo => {
+ return new Promise((resolve, reject) => {
+  fs.writeFile('./generateREADME.md', fileInfo, err => {
+   if (err) {
+    reject(err);
+    return;
+   }
+   resolve({
+    ok: true
+   });
+  });
+ });
 }
 
 // function to initialize program
 function init() {
-
+ inquirer.prompt(questions)
+  .then(function (answer) {
+   console.log(answer);
+   const fileInfo = generateMarkdown(answer)
+   writeToFile(fileInfo)
+  });
 }
 
 // function call to initialize program
 init();
+
+//Exporting the questions
+module.export = questions;
