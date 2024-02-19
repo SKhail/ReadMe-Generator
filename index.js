@@ -11,7 +11,7 @@ const questions = [
     message: 'What is the title of your project?',
     validate: function (value) {
       if (value.trim() === '') {
-        return 'Please enter a title for your project '
+        return 'Please enter a title for your project ' // ensure a user type in the required field
       }
       return true;
     }
@@ -42,6 +42,12 @@ const questions = [
     type: 'input',
     name: 'installation',
     message: 'Provide a step by step guide on how to install your project',
+    validate: function (value) {
+      if (value.trim() === '') {
+        return 'Please explain how to install your project '
+      }
+      return true;
+    }
   },
   {
     type: 'list',
@@ -53,16 +59,34 @@ const questions = [
     type: 'input',
     name: 'contribution',
     message: 'What guidelines must others follow when contributing to the project?',
+    validate: function (value) {
+      if (value.trim() === '') {
+        return 'Please explain how one can contribute to this project'
+      }
+      return true;
+    }
   },
   {
     type: 'input',
     name: 'tests',
     message: 'How do you test this project?',
+    validate: function (value) {
+      if (value.trim() === '') {
+        return 'Please explain how the type of methods you use to test your project'
+      }
+      return true;
+    }
   },
   {
     type: 'input',
     name: 'askGithub',
     message: 'If someone wants to contact you what is your Github username?',
+    validate: function (value) {
+      if (value.trim() === '') {
+        return 'Please provide your github username'
+      }
+      return true;
+    }
   },
   {
     type: 'input',

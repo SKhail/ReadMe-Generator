@@ -30,12 +30,12 @@ function generateMarkdown(data) {
     # ${data.title}
       
     ## Table of Content
-    ###[description](#description)
-    ### [usage] (#usage)
-    ### [installation] (#installation)
-    ### [license] (#license)
-    ### [contribution] (#contribution)
-    ### [tests] (#test)
+    - [description](#description)
+    - [usage] (#usage)
+    - [installation](#installation)
+    - [license](#license)
+    - [contribution] (#contribution)
+    - [tests] (#test)
 
     ## Description
     <a name="description"></a>${data.description}
@@ -61,7 +61,7 @@ function generateMarkdown(data) {
     ### Github Profile is: https://github.com/${data.askGithub}
 
     ## Email;
-    ### If you would like to give your email address: ${data.askEmail}
+    ### your email address: ${data.askEmail}
 
 `;
   // //use boxen to change the readme file look
@@ -69,7 +69,7 @@ function generateMarkdown(data) {
   // // console.log(boxedContent);
 
   // //use chalk to add colour to it 
-  // const colouredContent = chalk.backgroundColorNames(boxedContent);
+  // const colouredContent = chalk.bgBlue(boxedContent);
   // // console.log(colouredContent);
 
   // return colouredContent;
