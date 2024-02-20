@@ -15,6 +15,19 @@ The task is to create a good quality README file by using the Node.js and will b
 
 ```
 
+## Usage
+
+```
+1. Clone the repository to your local machine using:
+   git clone https://github.com/SKhail/ReadMe-Generator.git
+2. Once cloned, you can start the application
+3. Access the deployed application [Deployed Site Link] ()
+4. You will have it in your local machines and can start the Application.
+5. Refer to the video link shown below:
+```
+
+[ README Generator Video](utils/video/ReadMe-Generator.mp4)
+
 ## Installation
 
 ```
@@ -23,17 +36,6 @@ The task is to create a good quality README file by using the Node.js and will b
  3. git clone https://github.com/SKhail/ReadMe-Generator.git
  4. You will have it in your local machines and  can start the Application.
 ```
-
-## Usage
-
-1. Clone the repository to your local machine using:
-   git clone https://github.com/SKhail/ReadMe-Generator.git
-2. Once cloned, you can start the application
-3. Access the deployed application [Deployed Site Link] ()
-4. You will have it in your local machines and can start the Application.
-5. Refer to the video link shown below:
-
-   [ README Generator Video](utils/video/ReadMe-Generator.mp4)
 
 ## Feature
 
