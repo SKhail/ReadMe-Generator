@@ -1,14 +1,8 @@
-// CommonJS --> require('<library_name>');   (ES5 Syntax)
-// Module   --> import( '<library_name>');    (ES6 Syntax)
-
 // required packages
 const fs = require('fs');
 const inquirer = require('inquirer');
 const indexFile = require("../index.js");
-// const boxen = require('boxen');
-// const chalk = require('chalk');
-// import boxen from 'boxen';
-// import chalk from 'chalk';
+
 
 //function for generating licenese badges 
 function generateLicenseBadge(license) {
@@ -67,16 +61,7 @@ function generateMarkdown(data) {
 ### your email address: ${data.askEmail}
 
 `;
-  // //use boxen to change the readme file look
-  // const boxedContent = boxen(content, { padding: 1 });
-  // // console.log(boxedContent);
 
-  // //use chalk to add colour to it 
-  // const colouredContent = chalk.bgBlue(boxedContent);
-  // // console.log(colouredContent);
-
-  // return colouredContent;
 }
 
 module.exports = generateMarkdown;
-
