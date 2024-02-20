@@ -2,6 +2,19 @@
 
 ## Description
 
+The task is to create a good quality README file through node by using the command-line that will be utilising the Inquirer package . This CLI README-Generator will contain a layout consisting -
+
+```
+ *  Title of the page
+ *  Description
+ *  Usage
+ *  Installation
+ *  Type of License
+ *  Tests
+ *  Questions
+
+```
+
 ## Installation
 
 ```
@@ -26,6 +39,8 @@
 
 ## Feature
 
+N/A
+
 ## Credits
 
 N/A
@@ -39,4 +54,5 @@ This project is licened under the MIT License.
 ## Resources
 
 [License Badges] [https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba]
+
 [ReadMe Doc] [https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/]
