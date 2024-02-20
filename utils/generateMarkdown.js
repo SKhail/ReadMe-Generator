@@ -9,7 +9,7 @@ function generateLicenseBadge(license) {
   let itembadge = ';'
 
   //changing the if/else to a ternary operator
-  itembadge = license === 'MIT' ? '[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]' :
+  itembadge = license === 'MIT' ? '![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)' :
     license === 'Apache 2.0' ? '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)' :
       license === 'GPL v3' ? '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)' :
         license === 'BSD 3' ? '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)' :
@@ -28,7 +28,7 @@ function generateMarkdown(data) {
   
 ## Table of Content
 - [description](#description)
-- [usage] (#usage)
+- [usage](#usage)
 - [installation](#installation)
 - [license](#license)
 - [contribution](#contribution)
@@ -36,11 +36,11 @@ function generateMarkdown(data) {
 - [questions](#questions)
 
 ## Description
+
 <a name="description"></a>${data.description}
 
 ## Usage
 <a name="usage"></a> ${data.usage}
-
 
 ## Installation
 <a name="installation"></a>${data.installation}
@@ -54,11 +54,11 @@ function generateMarkdown(data) {
 ## Tests
 <a name="tests"></a>${data.tests}
 
-## questions
+## Questions
 
 ### Github Profile is: https://github.com/${data.askGithub}
 
-### your email address: ${data.askEmail}
+### Email address: ${data.askEmail}
 
 `;
 
