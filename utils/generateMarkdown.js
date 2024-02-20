@@ -56,7 +56,7 @@ function generateMarkdown(data) {
 
 ## Questions
 
-### Github Profile is: https://github.com/${data.askGithub}
+### Github Profile: https://github.com/${data.askGithub}
 
 ### Email address: ${data.askEmail}
 
